@@ -16,10 +16,13 @@
 #
 # Assume that:
 # N is an integer within the range [1..2,147,483,647].
+# import re
 def main():
+    def solution(num):
+        print format(num, 'b')
+        print max(format(num, 'b').strip('0').split('1'))
 
-
-
-
+        # len(max(format(N, 'b').strip('0').split('1')))
+    solution(529)
 
 if __name__== "__main__": main()
